@@ -23,7 +23,7 @@ struct FeedServerResponse: Decodable {
     
 }
 
-class NewsLoader: NewsLoading {
+final class NewsLoader: NewsLoading {
     static let shared = NewsLoader()
     
     private enum Constants {

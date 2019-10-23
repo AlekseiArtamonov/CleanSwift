@@ -12,7 +12,7 @@ protocol NewsListRouting {
     func showError(message: String)
 }
 
-class NewsListRouter: BaseRouter {
+final class NewsListRouter: BaseRouter {
     private enum Constants {
         static let errorTitle = "Что-то пошло не так"
         static let errorButton = "OK"

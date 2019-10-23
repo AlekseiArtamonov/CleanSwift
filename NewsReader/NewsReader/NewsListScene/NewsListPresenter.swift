@@ -13,7 +13,7 @@ protocol NewsListPresenting {
     func presentError(_ error: Error)
 }
 
-class NewsListPresenter: NewsListPresenting {
+final class NewsListPresenter: NewsListPresenting {
     weak var viewController: NewsListViewController?
     init(viewController: NewsListViewController) {
         self.viewController = viewController

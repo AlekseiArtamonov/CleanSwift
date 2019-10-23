@@ -12,7 +12,7 @@ protocol NewsListInteracting: class {
     func getNewsList(request: NewsList.ShowNews.Request)
 }
 
-class NewsListInteractor: NewsListInteracting {
+final class NewsListInteractor: NewsListInteracting {
     private var worker: NewsListWorking
     private var presenter: NewsListPresenting
     init(worker: NewsListWorking, presenter: NewsListPresenting) {

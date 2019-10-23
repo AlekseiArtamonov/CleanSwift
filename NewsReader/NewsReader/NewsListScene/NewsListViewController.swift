@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsListViewController: BaseViewController {
+final class NewsListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     var searchBar: UISearchBar?
     

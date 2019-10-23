@@ -16,7 +16,7 @@ protocol NewsListWorking {
     func loadImage(with url: URL, completion: @escaping (UIImage?) -> Void)
 }
 
-class NewsListWorker: NewsListWorking {
+final class NewsListWorker: NewsListWorking {
     
     private let newsLoader: NewsLoading
     
